@@ -37,3 +37,7 @@ img {
     display: block;
     margin: 0 auto;
 }
+
+.accesa {
+    content: url("./lampadine/img/yellow_lamp.png");
+}

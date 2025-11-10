@@ -11,7 +11,7 @@
 
 
 // Evento funzione anonima:
-//1. document.querySelector("#bottone").addEventListener("clcik", function () {
+//1. document.querySelector("#bottone").addEventListener("click", function () {
 //    console.log("cliccato");
 //} );
 
@@ -20,7 +20,10 @@
 //    console.log("cliccato");
 //});
 
-const lampadina = document.getElementById("lampadina-spenta");
+//Prima prova: 
+
+/**
+ * const lampadina = document.getElementById("lampadina-spenta");
 const bottone = document.getElementById("bottone");
 
 let accesa = false;
@@ -35,4 +38,24 @@ bottone.addEventListener("click", function() {
         bottone.textContent = "Spegni!";
         }
 })
+ */
+
+//Seconda prova con toggle:
+
+const lampadina = document.querySelector("#lampadina-spenta");
+const bottone = document.querySelector("#bottone");
+
+bottone.addEventListener("click", () => {
+    lampadina.classList.toggle("accesa");
+
+ if (lampadina.classList.contains("accesa")) {
+        bottone.textContent = "Spegni!";
+      } else {
+        bottone.textContent = "Accendi!";
+      };
+})
+
+
+
+
 
