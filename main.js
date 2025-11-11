@@ -20,10 +20,10 @@
 //    console.log("cliccato");
 //});
 
-//Prima prova: 
+/**Prima prova: 
 
-/**
- * const lampadina = document.getElementById("lampadina-spenta");
+
+const lampadina = document.getElementById("lampadina-spenta");
 const bottone = document.getElementById("bottone");
 
 let accesa = false;
@@ -31,16 +31,16 @@ let accesa = false;
 bottone.addEventListener("click", function() {
     accesa = !accesa;
     if (!accesa) {
-        lampadina.src = "./lampadine/img/white_lamp.png";
+        lampadina.src = "./lampadine/img/white_lamp.png";  //oppure lampadina.src.includes("white-lamp.png") per far sì che funzioni anche al di fuori del mio PC//
         bottone.textContent = "Accendi!";
     } else {
         lampadina.src = "./lampadine/img/yellow_lamp.png";
         bottone.textContent = "Spegni!";
         }
 })
- */
+ 
 
-//Seconda prova con toggle:
+Seconda prova con toggle:
 
 const lampadina = document.querySelector("#lampadina-spenta");
 const bottone = document.querySelector("#bottone");
@@ -58,4 +58,4 @@ bottone.addEventListener("click", () => {
 
 
 
-
+*/S
