@@ -20,7 +20,7 @@
 //    console.log("cliccato");
 //});
 
-Prima prova: 
+//Prima prova: 
 
 
 const lampadina = document.getElementById("lampadina-spenta");
@@ -40,18 +40,18 @@ bottone.addEventListener("click", function() {
 })
  
 
-Seconda prova con toggle:
+//Seconda prova con toggle:
 
-const lampadina = document.querySelector("#lampadina-spenta");
-const bottone = document.querySelector("#bottone");
+//const bottone = document.querySelector("#bottone");
+//const lampadina = document.querySelector("#lampadina-spenta");
 
-bottone.addEventListener("click", () => {
-    lampadina.classList.toggle("accesa");
+//bottone.addEventListener("click", () => {
+//    lampadina.classList.toggle("accesa");
 
- if (lampadina.classList.contains("accesa")) {
-        bottone.textContent = "Spegni!";
-      } else {
+// if (lampadina.classList.contains("accesa")) {
+//        bottone.textContent = "Spegni!";
+//      } else {
         bottone.textContent = "Accendi!";
-      };
-})
+//      };
+//})
 
