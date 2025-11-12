@@ -20,19 +20,19 @@
 //    console.log("cliccato");
 //});
 
-/**Prima prova: 
+Prima prova: 
 
 
 const lampadina = document.getElementById("lampadina-spenta");
 const bottone = document.getElementById("bottone");
 
-let accesa = false;
+let accesa = false;  //booleano per convenzione inizia con isQualcosa//
 
 bottone.addEventListener("click", function() {
     accesa = !accesa;
     if (!accesa) {
         lampadina.src = "./lampadine/img/white_lamp.png";  //oppure lampadina.src.includes("white-lamp.png") per far sì che funzioni anche al di fuori del mio PC//
-        bottone.textContent = "Accendi!";
+        bottone.textContent = "Accendi!";  //meglio usare innerText per evitare errori di distrazione, poiché textContent richiama esattamente tutto quello che c'è(tipo eventuali spazi nel testo)//
     } else {
         lampadina.src = "./lampadine/img/yellow_lamp.png";
         bottone.textContent = "Spegni!";
@@ -55,7 +55,3 @@ bottone.addEventListener("click", () => {
       };
 })
 
-
-
-
-*/S
